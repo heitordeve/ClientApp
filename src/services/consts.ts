@@ -1,0 +1,1 @@
+export const CodCanalVenda: number = 47;

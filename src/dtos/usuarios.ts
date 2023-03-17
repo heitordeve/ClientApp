@@ -1,0 +1,92 @@
+export interface Usuario {
+  AceiteCreditoConfianca: number
+  AceiteTermos: boolean,
+  AptoParaCadastroFidelidade: number,
+  CnpjUsuario: string,
+  CpfUsuario: string,
+  CnaePrincipal: string,
+  CodigoConta: number,
+  CodigoProgramaFidelidade: number,
+  CodigoPromocional: number,
+  CodigoUsuario: number,
+  CodigoUsuarioBanco: number,
+  DataCadastroUsuario: Date,
+  DataExportadoErp: Date,
+  DataFundacao: Date,
+  DataNascimentoUsuario: Date,
+  DataPep: Date,
+  DataVencimento: Date,
+  DtAdesaoFidelidade: Date,
+  DtEmissaoRG: Date,
+  EmailUsuario: string,
+  EstadoCivil: string,
+  ExportadoErp: boolean,
+  IsCPF: boolean,
+  IsPep: boolean,
+  Nacionalidade: string,
+  NegocioID: string,
+  NomeEmpresa: string,
+  NomeFantasia: string,
+  NomeImpresso: string,
+  NomeMae: string,
+  NomePai: string,
+  NomePreferencial: string,
+  NomeUsuario: string,
+  NumeroAgencia: string,
+  NumeroBanco: string,
+  NumeroConta: string,
+  NumeroDDD: string,
+  NumeroRG: string,
+  NumeroTelefone: string,
+  OrgaoEmissor: string,
+  PodeUsarCreditoConfianca: number,
+  ProdutoID: string,
+  Profissao: string,
+  PushTokenUsuario: string,
+  QuantidadeCashInAbertos: number,
+  QuerUsarCreditoConfianca: number,
+  RendaAnual: number,
+  RevendaSuspensa: boolean,
+  SenhaAntiga: string,
+  SenhaCarteira: boolean,
+  SenhaNova: string,
+  SenhaUsuario: string,
+  SexoUsuario: string,
+  StatusConta: StatusContaEnum,
+  Telefone: string,
+  TipoEmpresa: number,
+  TipoLoja: number,
+  TipoOcupacao: string,
+  TipoRevenda: number,
+  TipoTelefone: string,
+  TokenPoliticaPrivacidade: string,
+  TokenTermoDeUso: string,
+  TokenUsuario: string,
+  UfEmissor: string,
+  UsarioInativo: boolean,
+  ValorRenda: string,
+  CreditoConfianca: number,
+  EnderecoUsuario: string,
+  UsuarioBlakList: boolean,
+  TokenAcesso: string,
+  HostedUrl: string
+
+}
+
+export enum StatusContaEnum {
+  AguardandoProcessamento = 0,
+  ContaAtiva = 1,
+  ContaCancelada = 2, //pode abrir novamente
+  ContaRecusada = 3,
+  AguardandoDocumentação = 4,
+  ErroEnvioDocumentos = 5,
+  AguardandoAnalise = 6,
+  RecusadoSPD = 7 //conta recusada por enquanto
+}
+
+
+export interface DadosUsoCartao {
+  DataNascimentoUsuario: Date
+  SexoUsuario: string
+  NomeMae: string
+}

@@ -1,0 +1,33 @@
+
+export interface TipoCartao {
+  Codigo: number,
+  CodOperadora: number,
+  Descricao: string,
+  DescDetalheOperacao: string,
+  ValMaximoMredito: number,
+  ValMinimoCredito: number,
+  Sigla: string,
+  CodTecnologiaTipoCartao: number,
+  IdcInativo: boolean,
+  IdcBloqueio: boolean,
+  CodigoBloqueio: string,
+  DescricaoBloqueio: string,
+  IdcPrimeiraVia: boolean;
+  ValorEmissaoPrimeiraVia: number,
+  IdcSegundaVia: boolean;
+  ValorEmissaoSegundaVia: number,
+  UrlImagem: string,
+  IdcEstudante?: boolean,
+  IdcVt?: boolean,
+  IdcUsuario?: boolean,
+  ValorTarifa?: number,
+  IdcRevalidacaoCartao: boolean,
+  ValRevalidacaoOperadora: number,
+  ValRevalidacaoServico: number,
+  IdcCartaoIdentificado?: boolean,
+  IdcValidaLimiteRecarga: boolean,
+  IdcCpfCodAssinatura: boolean,
+  IdcCartaoVirtual: boolean,
+  IdcPrePedidoOperadora: boolean,
+  DetalheOperacao: string,
+}
